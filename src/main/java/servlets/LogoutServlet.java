@@ -16,8 +16,7 @@ import javax.servlet.http.HttpSession;
  */
 @WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		HttpSession session = request.getSession();
